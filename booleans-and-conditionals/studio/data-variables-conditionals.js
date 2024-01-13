@@ -62,6 +62,3 @@ console.log("Have a safe flight, astronauts!");
 } else {
     console.log("Not ready for liftoff, check all systems!");
 }
-
-git config --global user.email "zeynepkaya0109@gmail.com"
-  git config --global user.name "Zkaya9"
