@@ -1,6 +1,12 @@
+// const input = require('readline-sync');
 //Define three variables for the LaunchCode shuttle - one for the starting fuel level, another for the number of astronauts aboard, and the third for the altitude the shuttle reaches.
 
 
+let phrase = "Chili Cook-off";
+
+for (let i = 0; i < phrase.length - 1; i = i + 3) {
+   console.log(phrase[i]);
+}
 
 
 
