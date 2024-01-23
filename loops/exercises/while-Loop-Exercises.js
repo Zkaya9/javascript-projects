@@ -1,14 +1,30 @@
-// const input = require('readline-sync');
+const input = require('readline-sync');
 //Define three variables for the LaunchCode shuttle - one for the starting fuel level, another for the number of astronauts aboard, and the third for the altitude the shuttle reaches.
 
 
-let phrase = "Chili Cook-off";
+let fuelLevel =0 ;
+let astronautsAboard=0;
+let altitude=0;
 
-for (let i = 0; i < phrase.length - 1; i = i + 3) {
-   console.log(phrase[i]);
+while (fuelLevel <= 5000 || fuelLevel > 30000 || isNaN(fuelLevel)) {
+  fuelLevel = input.question("Enter the starting fuel level: ");
 }
 
 
+while (astronautsAboard <= 1 || astronautsAboard > 7 || isNaN(astronautsAboard)) {
+  fuelLevel = input.question("Enter number of astronous aboard: ");
+}
+
+while (fuelLevel-100*numAstronauts >= 0) {
+  altitude += 50;
+  fuelLevel -= 100*numAstronauts;
+  }
+
+  let output = `The shuttle gained an altitude of ${altitude} km.`;
+
+if (altitude >= 2000) {
+output += " Orbit achieved!";
+}
 
 /*Exercise #4: Construct while loops to do the following:
   a. Query the user for the starting fuel level. Validate that the user enters a positive, integer value greater than 5000 but less than 30000. */
